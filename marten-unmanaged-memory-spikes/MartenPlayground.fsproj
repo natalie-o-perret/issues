@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>Marten</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs"/>
+        <Content Include="img.png" />
+        <Content Include="README.md" />
+        <Content Include=".gitignore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Collections.ParallelSeq" Version="1.2.0" />
+      <PackageReference Include="FSharp.Control.TaskSeq" Version="0.3.0" />
+      <PackageReference Include="FSharpPlus" Version="1.5.0" />
+      <PackageReference Include="Marten" Version="6.4.1" />
+    </ItemGroup>
+
+</Project>
